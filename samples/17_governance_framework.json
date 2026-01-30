@@ -1,0 +1,31 @@
+{
+  "requestId": "a1f8e3c6-9b4d-42a7-8e5f-3c2d1b0a9f8e",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "IT Governance Framework Recommendations",
+    "context": "Present governance framework recommendations to steering committee. Each section should become a separate slide with extracted action items.",
+    "templatePreference": "it-strategy"
+  },
+  "brandConfig": {
+    "primaryColor": "#2d3748",
+    "secondaryColor": "#edf2f7",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "Governance Framework",
+      "source_type": "advisory_document",
+      "data": {
+        "executive_oversight": {
+          "text": "Establish a three-tier governance model with Executive Steering Committee meeting monthly, Transformation Management Office providing daily oversight, and Domain Working Groups driving technical decisions. The steering committee should include CIO, CFO, and two business unit leaders. Define clear escalation paths for decisions exceeding $500K or impacting more than 3 departments."
+        },
+        "change_management": {
+          "text": "Deploy structured change management within first 30 days. Identify change champions in each department with dedicated 20% time allocation. Implement bi-weekly communication cadence using multiple channels. Target 90% stakeholder awareness and 75% active engagement by end of Q2. Measure adoption through defined KPIs including training completion rates and system utilization metrics."
+        },
+        "risk_framework": {
+          "text": "Implement enterprise risk management framework aligned with industry standards. Establish risk appetite statements approved by board. Deploy automated risk monitoring with real-time dashboards. Conduct quarterly risk assessments with mandatory mitigation plans for items rated High or Critical. Maintain risk register with clear ownership and review cadence."
+        }
+      }
+    }
+  ]
+}

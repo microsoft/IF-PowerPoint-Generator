@@ -1,0 +1,46 @@
+{
+  "requestId": "72d1eeec-ed30-4d5e-8c0d-5f75b5fdce03",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "IT Budget Overview FY2025",
+    "context": "The CFO has requested a comprehensive IT budget overview for the upcoming board meeting. They want to see total allocation by category, year-over-year trends, and any significant variances between budget and actual spending.",
+    "templatePreference": "budget"
+  },
+  "brandConfig": {
+    "primaryColor": "#003366",
+    "secondaryColor": "#E8F0F8",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "IT Budget Allocation FY2025",
+      "source_type": "internal_chat",
+      "data": {
+        "total_budget": 45000000,
+        "currency": "USD",
+        "fiscal_year": "FY2025",
+        "allocation": {
+          "Infrastructure": 12500000,
+          "Applications": 9800000,
+          "Security": 7200000,
+          "Cloud Services": 6500000,
+          "Personnel": 5200000,
+          "Innovation": 2300000,
+          "Other": 1500000
+        },
+        "year_over_year": {
+          "FY2023": 38000000,
+          "FY2024": 42000000,
+          "FY2025": 45000000,
+          "FY2026_projected": 48500000
+        },
+        "budget_vs_actual": [
+          {"category": "Infrastructure", "budget": 12500000, "actual": 11800000, "variance": 700000},
+          {"category": "Applications", "budget": 9800000, "actual": 10200000, "variance": -400000},
+          {"category": "Security", "budget": 7200000, "actual": 6900000, "variance": 300000},
+          {"category": "Cloud Services", "budget": 6500000, "actual": 7100000, "variance": -600000}
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "requestId": "4d5cfd82-8726-441d-9b14-f726b33caf5c",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "ERP Vendor Evaluation Matrix",
+    "context": "We need to present our ERP vendor evaluation to the selection committee. Show a comparison of all four vendors across key criteria, total cost of ownership analysis, and our recommendation with supporting rationale.",
+    "templatePreference": "workbook"
+  },
+  "brandConfig": {
+    "primaryColor": "#2c3e50",
+    "secondaryColor": "#ecf0f1",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "ERP Vendor Evaluation Matrix",
+      "source_type": "internal_chat",
+      "data": {
+        "vendors": [
+          {"name": "SAP S/4HANA", "overall_score": 4.2, "scores": {"Functionality": 4.5, "Scalability": 4.3, "Integration": 4.0, "User Experience": 3.8, "Total Cost": 3.2, "Implementation": 3.5, "Support": 4.1, "Innovation": 4.4}, "pricing": {"license": 2500000, "implementation": 4500000, "annual_maintenance": 500000}, "implementation_months": 18},
+          {"name": "Oracle Cloud ERP", "overall_score": 4.0, "scores": {"Functionality": 4.3, "Scalability": 4.4, "Integration": 3.8, "User Experience": 3.9, "Total Cost": 3.5, "Implementation": 3.6, "Support": 3.9, "Innovation": 4.2}, "pricing": {"license": 2200000, "implementation": 3800000, "annual_maintenance": 440000}, "implementation_months": 15},
+          {"name": "Microsoft Dynamics 365", "overall_score": 3.9, "scores": {"Functionality": 3.8, "Scalability": 4.0, "Integration": 4.5, "User Experience": 4.2, "Total Cost": 4.0, "Implementation": 4.0, "Support": 4.0, "Innovation": 3.8}, "pricing": {"license": 1800000, "implementation": 2500000, "annual_maintenance": 360000}, "implementation_months": 12},
+          {"name": "Workday", "overall_score": 3.7, "scores": {"Functionality": 3.5, "Scalability": 3.8, "Integration": 3.6, "User Experience": 4.4, "Total Cost": 3.8, "Implementation": 4.2, "Support": 4.0, "Innovation": 3.9}, "pricing": {"license": 1600000, "implementation": 2000000, "annual_maintenance": 320000}, "implementation_months": 10}
+        ],
+        "weighting": {"Functionality": 0.2, "Scalability": 0.15, "Integration": 0.15, "User Experience": 0.1, "Total Cost": 0.15, "Implementation": 0.1, "Support": 0.08, "Innovation": 0.07}
+      }
+    }
+  ]
+}

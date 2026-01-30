@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Download";
+}
+
+<div class="card download-card">
+    @if (ViewBag.Simulated == true)
+    {
+        <div class="simulated-notice">
+            <h2>Demo Mode</h2>
+            <p>The orchestrator service is not running. This is a simulated completion.</p>
+            <p>In production, your PowerPoint file would be available for download here.</p>
+        </div>
+    }
+
+    <div class="download-info">
+        <h3>Job ID: @ViewBag.JobId</h3>
+        <p>Status: <span class="status-badge status-completed">Completed</span></p>
+    </div>
+
+    <div class="download-actions">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Submit Another Job</a>
+    </div>
+</div>

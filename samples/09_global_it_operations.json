@@ -1,0 +1,49 @@
+{
+  "requestId": "ade1e52a-74bc-419d-90b3-4ad6b53f7899",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "Global IT Operations Overview",
+    "context": "Create an overview of our global IT operations for the Global CIO review. Show geographic distribution of IT staff, regional spending, service desk performance by region, and data center utilization.",
+    "templatePreference": "executive"
+  },
+  "brandConfig": {
+    "primaryColor": "#004d40",
+    "secondaryColor": "#e0f2f1",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "Global IT Operations Overview",
+      "source_type": "internal_chat",
+      "data": {
+        "regional_headcount": {
+          "location_mode": "ISO-3",
+          "data": [
+            {"location": "USA", "value": 450, "cost_center": "North America"},
+            {"location": "GBR", "value": 120, "cost_center": "EMEA"},
+            {"location": "DEU", "value": 85, "cost_center": "EMEA"},
+            {"location": "IND", "value": 380, "cost_center": "APAC"},
+            {"location": "PHL", "value": 150, "cost_center": "APAC"},
+            {"location": "BRA", "value": 65, "cost_center": "LATAM"},
+            {"location": "AUS", "value": 45, "cost_center": "APAC"},
+            {"location": "JPN", "value": 55, "cost_center": "APAC"},
+            {"location": "CAN", "value": 40, "cost_center": "North America"},
+            {"location": "SGP", "value": 35, "cost_center": "APAC"}
+          ]
+        },
+        "regional_spend": {"North America": 42000000, "EMEA": 28000000, "APAC": 18000000, "LATAM": 7000000},
+        "service_desk_metrics": {
+          "tickets_by_region": {"North America": 45000, "EMEA": 28000, "APAC": 35000, "LATAM": 12000},
+          "avg_resolution_hours": {"North America": 4.2, "EMEA": 5.1, "APAC": 3.8, "LATAM": 6.5},
+          "satisfaction_score": {"North America": 4.2, "EMEA": 4.0, "APAC": 4.4, "LATAM": 3.9}
+        },
+        "data_centers": [
+          {"name": "US-East", "location": "Virginia", "capacity_pct": 72, "pue": 1.4},
+          {"name": "US-West", "location": "Oregon", "capacity_pct": 58, "pue": 1.3},
+          {"name": "EU-Central", "location": "Frankfurt", "capacity_pct": 65, "pue": 1.5},
+          {"name": "APAC-Primary", "location": "Singapore", "capacity_pct": 78, "pue": 1.6}
+        ]
+      }
+    }
+  ]
+}

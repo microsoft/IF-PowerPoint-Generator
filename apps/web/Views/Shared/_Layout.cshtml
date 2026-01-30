@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PPT Generator</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PPT Generator</h1>
+            <p class="subtitle">Test Interface for Presentation Generation</p>
+        </header>
+
+        <main>
+            @RenderBody()
+        </main>
+
+        <footer>
+            <p>PPT Generator POC - Orchestrator: <code>@ViewBag.OrchestratorUrl</code></p>
+        </footer>
+    </div>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

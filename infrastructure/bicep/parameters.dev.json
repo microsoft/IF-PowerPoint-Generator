@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environment": {
+      "value": "dev"
+    },
+    "baseName": {
+      "value": "pptgen"
+    },
+    "openAiResourceName": {
+      "value": ""
+    },
+    "sqlAdminUsername": {
+      "value": "pptadmin"
+    },
+    "sqlAdminPassword": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/<subscription-id>/resourceGroups/<rg-name>/providers/Microsoft.KeyVault/vaults/<keyvault-name>"
+        },
+        "secretName": "sql-admin-password"
+      }
+    }
+  }
+}

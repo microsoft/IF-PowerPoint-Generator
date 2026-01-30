@@ -1,0 +1,45 @@
+{
+  "requestId": "b4ea48de-af6f-4998-a363-815f4f828c3d",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "Cloud Cost Analysis and Optimization",
+    "context": "Prepare a cloud cost optimization presentation for IT leadership. Show spending trends across our three cloud providers, breakdown by service category, and specific optimization opportunities with projected savings. We need to justify a FinOps initiative.",
+    "templatePreference": "budget"
+  },
+  "brandConfig": {
+    "primaryColor": "#232f3e",
+    "secondaryColor": "#f5f5f5",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "Cloud Cost Analysis and Optimization",
+      "source_type": "internal_chat",
+      "data": {
+        "monthly_spend": [
+          {"month": "Jan", "aws": 245000, "azure": 180000, "gcp": 45000},
+          {"month": "Feb", "aws": 252000, "azure": 185000, "gcp": 48000},
+          {"month": "Mar", "aws": 268000, "azure": 192000, "gcp": 52000},
+          {"month": "Apr", "aws": 275000, "azure": 198000, "gcp": 55000},
+          {"month": "May", "aws": 282000, "azure": 205000, "gcp": 58000},
+          {"month": "Jun", "aws": 295000, "azure": 215000, "gcp": 62000},
+          {"month": "Jul", "aws": 288000, "azure": 210000, "gcp": 60000},
+          {"month": "Aug", "aws": 278000, "azure": 208000, "gcp": 58000},
+          {"month": "Sep", "aws": 285000, "azure": 212000, "gcp": 61000},
+          {"month": "Oct", "aws": 292000, "azure": 218000, "gcp": 64000},
+          {"month": "Nov", "aws": 298000, "azure": 225000, "gcp": 68000},
+          {"month": "Dec", "aws": 305000, "azure": 232000, "gcp": 72000}
+        ],
+        "cost_by_service": {"Compute": 3200000, "Storage": 1450000, "Database": 980000, "Networking": 620000, "Analytics": 450000, "AI/ML": 380000, "Other": 320000},
+        "optimization_opportunities": [
+          {"name": "Right-size EC2 instances", "current_cost": 1200000, "optimized_cost": 840000, "savings": 360000},
+          {"name": "Reserved Instance adoption", "current_cost": 800000, "optimized_cost": 520000, "savings": 280000},
+          {"name": "Storage tiering", "current_cost": 450000, "optimized_cost": 270000, "savings": 180000},
+          {"name": "Idle resource cleanup", "current_cost": 320000, "optimized_cost": 0, "savings": 320000},
+          {"name": "Container optimization", "current_cost": 280000, "optimized_cost": 168000, "savings": 112000}
+        ],
+        "waste_analysis": {"idle_resources": 320000, "oversized_instances": 450000, "unattached_storage": 85000, "unused_licenses": 120000}
+      }
+    }
+  ]
+}

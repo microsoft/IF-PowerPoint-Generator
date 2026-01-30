@@ -1,0 +1,65 @@
+{
+  "requestId": "cc090f17-fcc4-4767-a041-6c1c9446539a",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "Enterprise API Platform Metrics December 2024",
+    "context": "Create an API platform metrics presentation for the architecture review board. Show overall platform health, traffic patterns, latency distribution, top consumers, and error analysis.",
+    "templatePreference": "it-strategy"
+  },
+  "brandConfig": {
+    "primaryColor": "#00695c",
+    "secondaryColor": "#e0f2f1",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "Enterprise API Platform Metrics December 2024",
+      "source_type": "goat",
+      "data": {
+        "platform_summary": {
+          "total_apis": 245,
+          "active_consumers": 89,
+          "monthly_calls": 125000000,
+          "avg_latency_ms": 145,
+          "success_rate": 99.2
+        },
+        "calls_by_api_category": {
+          "Customer APIs": 45000000,
+          "Product APIs": 32000000,
+          "Order APIs": 28000000,
+          "Payment APIs": 12000000,
+          "Analytics APIs": 8000000
+        },
+        "daily_traffic": [
+          {"day": "Mon", "calls": 4200000, "errors": 28000},
+          {"day": "Tue", "calls": 4500000, "errors": 31000},
+          {"day": "Wed", "calls": 4800000, "errors": 35000},
+          {"day": "Thu", "calls": 4600000, "errors": 29000},
+          {"day": "Fri", "calls": 4100000, "errors": 25000},
+          {"day": "Sat", "calls": 2200000, "errors": 12000},
+          {"day": "Sun", "calls": 1800000, "errors": 9000}
+        ],
+        "latency_percentiles": {
+          "p50": 85,
+          "p75": 125,
+          "p90": 210,
+          "p95": 320,
+          "p99": 580
+        },
+        "top_consumers": [
+          {"name": "Mobile App", "calls": 42000000, "share": 33.6},
+          {"name": "Web Portal", "calls": 35000000, "share": 28.0},
+          {"name": "Partner Integration", "calls": 22000000, "share": 17.6},
+          {"name": "Internal Apps", "calls": 18000000, "share": 14.4},
+          {"name": "Third-party", "calls": 8000000, "share": 6.4}
+        ],
+        "error_breakdown": {
+          "4xx Client Errors": 720000,
+          "5xx Server Errors": 180000,
+          "Timeout Errors": 95000,
+          "Rate Limit": 45000
+        }
+      }
+    }
+  ]
+}

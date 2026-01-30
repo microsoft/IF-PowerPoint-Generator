@@ -1,0 +1,45 @@
+{
+  "requestId": "9d71d2eb-a835-422a-917f-e2c2cebfef47",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "Application Portfolio Rationalization Analysis",
+    "context": "Present the application rationalization findings to IT leadership. Show the current portfolio state, disposition recommendations with savings potential, and top consolidation opportunities. We need to justify the rationalization program investment.",
+    "templatePreference": "workbook"
+  },
+  "brandConfig": {
+    "primaryColor": "#5d4037",
+    "secondaryColor": "#efebe9",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "Application Portfolio Rationalization Analysis",
+      "source_type": "goat",
+      "data": {
+        "portfolio_summary": {"total_applications": 342, "total_annual_cost": 45000000, "avg_age_years": 8.5, "redundant_apps": 67, "end_of_life": 45},
+        "disposition_recommendations": {
+          "Retire": {"count": 78, "annual_savings": 8500000},
+          "Replace": {"count": 45, "annual_savings": 5200000},
+          "Consolidate": {"count": 52, "annual_savings": 6800000},
+          "Retain": {"count": 112, "annual_savings": 0},
+          "Modernize": {"count": 55, "annual_savings": 2500000}
+        },
+        "by_business_criticality": {"Mission Critical": 45, "Business Critical": 89, "Business Operational": 124, "Administrative": 84},
+        "by_technical_health": {"Healthy": 98, "Aging": 145, "Critical": 72, "End of Life": 27},
+        "top_consolidation_opportunities": [
+          {"category": "CRM Systems", "current_count": 5, "target_count": 1, "annual_savings": 1200000},
+          {"category": "HR Systems", "current_count": 4, "target_count": 1, "annual_savings": 850000},
+          {"category": "BI Tools", "current_count": 6, "target_count": 2, "annual_savings": 920000},
+          {"category": "Project Management", "current_count": 8, "target_count": 2, "annual_savings": 680000},
+          {"category": "Collaboration Tools", "current_count": 5, "target_count": 1, "annual_savings": 450000}
+        ],
+        "treemap_data": {
+          "Finance": {"ERP": 4500000, "Treasury": 1200000, "Procurement": 980000, "Expenses": 450000},
+          "HR": {"Core HR": 2100000, "Payroll": 1500000, "Recruiting": 680000, "Learning": 520000},
+          "Sales": {"CRM": 3200000, "CPQ": 890000, "Forecasting": 450000},
+          "Operations": {"Supply Chain": 2800000, "Manufacturing": 1900000, "Quality": 720000}
+        }
+      }
+    }
+  ]
+}

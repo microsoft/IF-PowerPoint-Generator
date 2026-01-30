@@ -1,0 +1,68 @@
+{
+  "requestId": "b76a41ee-1f91-4884-9b50-27c59ac762fd",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "IT Talent & Skills Gap Analysis",
+    "context": "Present the IT talent and skills analysis to HR and IT leadership. Show current workforce composition, skills gaps compared to future needs, and our hiring and training plan to address the gaps.",
+    "templatePreference": "workbook"
+  },
+  "brandConfig": {
+    "primaryColor": "#6a1b9a",
+    "secondaryColor": "#f3e5f5",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "IT Talent & Skills Gap Analysis",
+      "source_type": "internal_chat",
+      "data": {
+        "workforce_summary": {
+          "total_headcount": 485,
+          "contractors": 85,
+          "attrition_rate": 12.5,
+          "avg_tenure_years": 4.2,
+          "open_positions": 32
+        },
+        "skills_inventory": {
+          "Cloud (AWS/Azure/GCP)": {"current": 120, "needed": 180, "gap": 60},
+          "DevOps/SRE": {"current": 45, "needed": 75, "gap": 30},
+          "Data Engineering": {"current": 35, "needed": 60, "gap": 25},
+          "Cybersecurity": {"current": 42, "needed": 65, "gap": 23},
+          "AI/ML": {"current": 18, "needed": 40, "gap": 22},
+          "Agile/Scrum": {"current": 95, "needed": 120, "gap": 25},
+          "Enterprise Architecture": {"current": 12, "needed": 20, "gap": 8},
+          "Legacy Systems": {"current": 85, "needed": 50, "gap": -35}
+        },
+        "by_department": {
+          "Development": 145,
+          "Infrastructure": 95,
+          "Security": 42,
+          "Data & Analytics": 55,
+          "Project Management": 35,
+          "Architecture": 28,
+          "Support": 85
+        },
+        "by_experience_level": {
+          "Junior (0-2 years)": 85,
+          "Mid-Level (3-5 years)": 165,
+          "Senior (6-10 years)": 145,
+          "Principal/Staff (10+ years)": 90
+        },
+        "training_investment": {
+          "Cloud Certifications": 180000,
+          "Security Training": 95000,
+          "Leadership Development": 75000,
+          "Technical Bootcamps": 120000,
+          "Conference & Events": 65000
+        },
+        "hiring_plan": [
+          {"role": "Cloud Engineers", "count": 15, "priority": "high", "timeline": "Q1-Q2"},
+          {"role": "Security Analysts", "count": 8, "priority": "critical", "timeline": "Q1"},
+          {"role": "Data Engineers", "count": 10, "priority": "high", "timeline": "Q1-Q3"},
+          {"role": "DevOps Engineers", "count": 12, "priority": "medium", "timeline": "Q2-Q3"},
+          {"role": "AI/ML Engineers", "count": 6, "priority": "medium", "timeline": "Q2-Q4"}
+        ]
+      }
+    }
+  ]
+}

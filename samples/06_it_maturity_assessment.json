@@ -1,0 +1,46 @@
+{
+  "requestId": "930ee6cf-b183-438c-9f90-dee52c4885b0",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "IT Capability Maturity Assessment",
+    "context": "Present our IT maturity assessment results to the CIO. Show how we compare across all domains versus our targets and industry averages. Highlight the priority gaps and our proposed improvement initiatives.",
+    "templatePreference": "it-strategy"
+  },
+  "brandConfig": {
+    "primaryColor": "#37474f",
+    "secondaryColor": "#eceff1",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "IT Capability Maturity Assessment",
+      "source_type": "internal_chat",
+      "data": {
+        "assessment_date": "2024-12-15",
+        "maturity_model": "Industry IT Maturity Model",
+        "domains": {
+          "Strategy & Governance": {"current": 2.8, "target": 4.0, "industry_avg": 3.2},
+          "Enterprise Architecture": {"current": 2.3, "target": 3.5, "industry_avg": 2.8},
+          "Application Portfolio": {"current": 3.1, "target": 4.0, "industry_avg": 3.0},
+          "Infrastructure & Operations": {"current": 3.5, "target": 4.2, "industry_avg": 3.4},
+          "Security & Risk": {"current": 2.9, "target": 4.0, "industry_avg": 3.1},
+          "Data & Analytics": {"current": 2.4, "target": 4.0, "industry_avg": 2.9},
+          "Digital Workplace": {"current": 3.2, "target": 4.0, "industry_avg": 3.3},
+          "Innovation": {"current": 2.0, "target": 3.5, "industry_avg": 2.5}
+        },
+        "maturity_levels": {"1": "Initial/Ad-hoc", "2": "Developing", "3": "Defined", "4": "Managed", "5": "Optimizing"},
+        "priority_gaps": [
+          {"domain": "Innovation", "gap": 1.5, "priority": 1},
+          {"domain": "Data & Analytics", "gap": 1.6, "priority": 2},
+          {"domain": "Enterprise Architecture", "gap": 1.2, "priority": 3},
+          {"domain": "Security & Risk", "gap": 1.1, "priority": 4}
+        ],
+        "improvement_initiatives": [
+          {"domain": "Innovation", "initiative": "Innovation Lab Launch", "investment": 500000, "timeline": "6 months"},
+          {"domain": "Data & Analytics", "initiative": "Data Governance Program", "investment": 750000, "timeline": "12 months"},
+          {"domain": "Enterprise Architecture", "initiative": "EA Practice Establishment", "investment": 400000, "timeline": "9 months"}
+        ]
+      }
+    }
+  ]
+}

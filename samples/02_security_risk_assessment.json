@@ -1,0 +1,47 @@
+{
+  "requestId": "d10ca406-1946-403b-bf8f-852944651bfa",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "Cybersecurity Risk Assessment Q4 2024",
+    "context": "Prepare a CISO board briefing on our current security posture. The board wants to understand our risk exposure, how we compare to targets, and what the current threat landscape looks like. Include incident trends from the past 6 months.",
+    "templatePreference": "ciso-briefing"
+  },
+  "brandConfig": {
+    "primaryColor": "#1a237e",
+    "secondaryColor": "#e8eaf6",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "Cybersecurity Risk Assessment Q4 2024",
+      "source_type": "internal_chat",
+      "data": {
+        "overall_risk_score": 72,
+        "target_score": 85,
+        "risk_categories": [
+          {"category": "Data Protection", "current": 78, "target": 90, "priority": "high"},
+          {"category": "Access Management", "current": 65, "target": 85, "priority": "critical"},
+          {"category": "Network Security", "current": 82, "target": 90, "priority": "medium"},
+          {"category": "Endpoint Security", "current": 70, "target": 85, "priority": "high"},
+          {"category": "Incident Response", "current": 68, "target": 80, "priority": "high"},
+          {"category": "Vendor Risk", "current": 55, "target": 75, "priority": "critical"}
+        ],
+        "threat_landscape": {
+          "Ransomware": {"likelihood": 0.7, "impact": 0.9, "trend": "increasing"},
+          "Phishing": {"likelihood": 0.85, "impact": 0.6, "trend": "stable"},
+          "Insider Threats": {"likelihood": 0.4, "impact": 0.8, "trend": "increasing"},
+          "Supply Chain": {"likelihood": 0.5, "impact": 0.85, "trend": "increasing"},
+          "DDoS": {"likelihood": 0.3, "impact": 0.5, "trend": "stable"}
+        },
+        "incidents_by_month": [
+          {"month": "Jul", "critical": 2, "high": 5, "medium": 12},
+          {"month": "Aug", "critical": 1, "high": 8, "medium": 15},
+          {"month": "Sep", "critical": 3, "high": 6, "medium": 10},
+          {"month": "Oct", "critical": 1, "high": 4, "medium": 18},
+          {"month": "Nov", "critical": 0, "high": 7, "medium": 14},
+          {"month": "Dec", "critical": 2, "high": 3, "medium": 11}
+        ]
+      }
+    }
+  ]
+}

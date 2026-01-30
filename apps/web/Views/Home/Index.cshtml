@@ -1,0 +1,79 @@
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h2>Submit Job</h2>
+        <div class="samples-dropdown">
+            <button id="loadSampleBtn" class="btn btn-secondary">Load Sample</button>
+            <div id="samplesMenu" class="dropdown-menu"></div>
+        </div>
+    </div>
+
+    <form id="submitForm">
+        <div class="form-group">
+            <label for="jsonInput">JSON Payload</label>
+            <textarea id="jsonInput" name="jsonContent" placeholder="Paste your JSON payload here..." rows="20"></textarea>
+            <div class="json-actions">
+                <button type="button" id="formatBtn" class="btn btn-small">Format JSON</button>
+                <button type="button" id="validateBtn" class="btn btn-small">Validate</button>
+                <button type="button" id="clearBtn" class="btn btn-small btn-danger">Clear</button>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" id="submitBtn" class="btn btn-primary">
+                <span class="btn-text">Generate Presentation</span>
+                <span class="btn-loader" style="display: none;">Submitting...</span>
+            </button>
+        </div>
+    </form>
+</div>
+
+<div id="statusCard" class="card" style="display: none;">
+    <div class="card-header">
+        <h2>Job Status</h2>
+        <span id="jobId" class="job-id"></span>
+    </div>
+
+    <div class="status-content">
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div id="progressFill" class="progress-fill" style="width: 0%"></div>
+            </div>
+            <span id="progressText" class="progress-text">0%</span>
+        </div>
+
+        <div class="status-details">
+            <div class="status-item">
+                <span class="label">Status:</span>
+                <span id="statusValue" class="value status-badge">Pending</span>
+            </div>
+            <div class="status-item">
+                <span class="label">Current Step:</span>
+                <span id="currentStep" class="value">-</span>
+            </div>
+        </div>
+
+        <div id="downloadSection" class="download-section" style="display: none;">
+            <a id="downloadLink" href="#" class="btn btn-success btn-large">
+                Download Presentation
+            </a>
+        </div>
+
+        <div id="errorSection" class="error-section" style="display: none;">
+            <p id="errorMessage" class="error-message"></p>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h2>Recent Jobs</h2>
+        <button id="refreshJobsBtn" class="btn btn-small">Refresh</button>
+    </div>
+    <div id="jobsList" class="jobs-list">
+        <p class="empty-state">No jobs submitted yet</p>
+    </div>
+</div>

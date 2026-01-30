@@ -1,0 +1,23 @@
+{
+  "requestId": "c7a3b9d2-4e5f-4a8c-b1d3-9f6e2c8a7b5d",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "Strategic Technology Recommendations",
+    "context": "Executive briefing on technology modernization strategy. Convert advisory recommendations into actionable presentation slides for CIO review.",
+    "templatePreference": "executive"
+  },
+  "brandConfig": {
+    "primaryColor": "#1a365d",
+    "secondaryColor": "#e2e8f0",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "Technology Modernization Recommendations",
+      "source_type": "advisory_document",
+      "data": {
+        "text": "Based on our comprehensive assessment, [Client] should pursue a phased modernization strategy over the next 18 months. Implement cloud-first architecture principles, prioritizing workload migration for non-critical systems in Phase 1. Establish a Cloud Center of Excellence within 90 days to drive adoption and maintain governance standards. The organization should invest approximately 15% of IT budget in modernization initiatives, with expected ROI of 2.5x within 3 years. Ensure executive sponsorship from both IT and business leadership to maintain momentum. Develop a comprehensive change management program targeting 85% user adoption within 6 months of each rollout phase."
+      }
+    }
+  ]
+}

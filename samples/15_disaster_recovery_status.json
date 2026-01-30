@@ -1,0 +1,59 @@
+{
+  "requestId": "978c51b3-39cf-4f77-805b-80b845e2878e",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "Disaster Recovery & Business Continuity Status",
+    "context": "Prepare a disaster recovery status presentation for the risk committee. Show overall DR coverage, RTO/RPO compliance by tier, test results history, identified gaps with remediation costs, and our geographic DR footprint.",
+    "templatePreference": "ciso-briefing"
+  },
+  "brandConfig": {
+    "primaryColor": "#b71c1c",
+    "secondaryColor": "#ffebee",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "Disaster Recovery & Business Continuity Status",
+      "source_type": "internal_chat",
+      "data": {
+        "dr_summary": {
+          "total_systems": 156,
+          "systems_with_dr": 128,
+          "coverage_pct": 82.1,
+          "last_full_test": "2024-10-15",
+          "next_scheduled_test": "2025-04-15"
+        },
+        "rto_rpo_analysis": [
+          {"tier": "Tier 1 - Mission Critical", "count": 24, "target_rto": 1, "actual_rto": 0.8, "target_rpo": 0, "actual_rpo": 0},
+          {"tier": "Tier 2 - Business Critical", "count": 45, "target_rto": 4, "actual_rto": 3.5, "target_rpo": 1, "actual_rpo": 0.5},
+          {"tier": "Tier 3 - Business Operational", "count": 59, "target_rto": 24, "actual_rto": 18, "target_rpo": 4, "actual_rpo": 2},
+          {"tier": "Tier 4 - Non-Critical", "count": 28, "target_rto": 72, "actual_rto": 48, "target_rpo": 24, "actual_rpo": 12}
+        ],
+        "dr_capability_by_category": {
+          "Active-Active": 18,
+          "Hot Standby": 32,
+          "Warm Standby": 45,
+          "Cold Standby": 33,
+          "No DR": 28
+        },
+        "test_results_history": [
+          {"date": "2024-10", "systems_tested": 45, "successful": 42, "failed": 3},
+          {"date": "2024-07", "systems_tested": 52, "successful": 48, "failed": 4},
+          {"date": "2024-04", "systems_tested": 48, "successful": 43, "failed": 5},
+          {"date": "2024-01", "systems_tested": 40, "successful": 35, "failed": 5}
+        ],
+        "gaps_and_risks": [
+          {"system": "Legacy ERP", "risk": "No automated failover", "impact": "critical", "remediation_cost": 450000},
+          {"system": "Data Warehouse", "risk": "RPO exceeds target", "impact": "high", "remediation_cost": 280000},
+          {"system": "HR System", "risk": "DR site outdated", "impact": "medium", "remediation_cost": 120000},
+          {"system": "Email Archive", "risk": "No DR capability", "impact": "low", "remediation_cost": 85000}
+        ],
+        "regional_dr_sites": [
+          {"primary": "US-East", "secondary": "US-West", "distance_miles": 2800, "sync_type": "Async"},
+          {"primary": "EU-Frankfurt", "secondary": "EU-Dublin", "distance_miles": 850, "sync_type": "Sync"},
+          {"primary": "APAC-Singapore", "secondary": "APAC-Sydney", "distance_miles": 3900, "sync_type": "Async"}
+        ]
+      }
+    }
+  ]
+}
