@@ -1,0 +1,37 @@
+{
+  "requestId": "185b7993-32f0-4123-939b-e159aa689a87",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "IT KPI Dashboard Q4 2024",
+    "context": "Create an IT KPI dashboard presentation for the monthly operations review. Show key metrics with trend data, current vs target performance, and SLA compliance across priority levels.",
+    "templatePreference": "executive"
+  },
+  "brandConfig": {
+    "primaryColor": "#1976d2",
+    "secondaryColor": "#e3f2fd",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "IT KPI Dashboard Q4 2024",
+      "source_type": "internal_chat",
+      "data": {
+        "kpis": [
+          {"name": "System Availability", "value": 99.7, "target": 99.9, "previous": 99.5, "unit": "%", "trend": [99.2, 99.4, 99.5, 99.6, 99.7]},
+          {"name": "Mean Time to Resolve", "value": 3.2, "target": 4.0, "previous": 3.8, "unit": "hours", "trend": [4.5, 4.2, 3.9, 3.5, 3.2]},
+          {"name": "Change Success Rate", "value": 94.5, "target": 95.0, "previous": 92.1, "unit": "%", "trend": [89.5, 91.2, 92.1, 93.8, 94.5]},
+          {"name": "IT Cost per Employee", "value": 12450, "target": 12000, "previous": 13200, "unit": "$", "trend": [14500, 13800, 13200, 12800, 12450]},
+          {"name": "Security Incidents", "value": 12, "target": 10, "previous": 18, "unit": "count", "trend": [24, 21, 18, 15, 12]},
+          {"name": "User Satisfaction", "value": 4.2, "target": 4.5, "previous": 4.0, "unit": "score", "trend": [3.8, 3.9, 4.0, 4.1, 4.2]}
+        ],
+        "incidents_by_category": {"Infrastructure": 145, "Application": 234, "Network": 89, "Security": 45, "Database": 67, "Other": 120},
+        "sla_compliance": {
+          "P1 - Critical": {"target": 99, "actual": 98.5},
+          "P2 - High": {"target": 95, "actual": 96.2},
+          "P3 - Medium": {"target": 90, "actual": 94.8},
+          "P4 - Low": {"target": 85, "actual": 92.1}
+        }
+      }
+    }
+  ]
+}

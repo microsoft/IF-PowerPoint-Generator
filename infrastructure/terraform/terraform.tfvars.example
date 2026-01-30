@@ -1,0 +1,36 @@
+# ============================================
+# PPT Generator Service - Terraform Variables
+# Copy this file to terraform.tfvars and update values
+# ============================================
+
+# Required variables
+resource_group_name = "rg-pptgen-dev"
+sql_admin_password  = "CHANGE_ME_SecurePassword123!"
+
+# Optional overrides
+environment = "dev"
+location    = "eastus"
+base_name   = "pptgen"
+
+# SQL admin username (optional, defaults to "pptadmin")
+# sql_admin_username = "pptadmin"
+
+# Container image (update after building)
+# container_image = "myregistry.azurecr.io/pptgen-orchestrator:v1.0.0"
+
+# Environment-specific sizing
+# service_bus_sku      = "Premium"
+# service_bus_capacity = 1
+# cosmos_throughput_mode = "serverless"
+# sql_sku = "Basic"
+# container_app_min_replicas = 1
+# container_app_max_replicas = 100
+
+# VNet integration (production)
+# enable_vnet = false
+
+# Additional tags
+# tags = {
+#   CostCenter = "IT-12345"
+#   Owner      = "team@example.com"
+# }

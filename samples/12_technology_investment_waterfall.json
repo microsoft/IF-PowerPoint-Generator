@@ -1,0 +1,71 @@
+{
+  "requestId": "37687ca8-da53-43b8-91e3-b2bb1249d4f3",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "Technology Investment Flow FY2025",
+    "context": "Prepare the FY2025 IT budget proposal for the CFO. Show the waterfall from FY2024 baseline to FY2025 proposed with key drivers, breakdown by investment category, and how funds flow across major spending areas.",
+    "templatePreference": "budget"
+  },
+  "brandConfig": {
+    "primaryColor": "#2e7d32",
+    "secondaryColor": "#e8f5e9",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "Technology Investment Flow FY2025",
+      "source_type": "internal_chat",
+      "data": {
+        "waterfall": [
+          {"name": "FY2024 Baseline", "value": 42000000, "measure": "absolute"},
+          {"name": "Inflation Adjustment", "value": 1260000, "measure": "relative"},
+          {"name": "Cloud Investments", "value": 3500000, "measure": "relative"},
+          {"name": "Security Enhancement", "value": 2800000, "measure": "relative"},
+          {"name": "Digital Initiatives", "value": 4200000, "measure": "relative"},
+          {"name": "Legacy Retirement Savings", "value": -2100000, "measure": "relative"},
+          {"name": "Vendor Consolidation", "value": -1500000, "measure": "relative"},
+          {"name": "Efficiency Gains", "value": -1800000, "measure": "relative"},
+          {"name": "FY2025 Proposed", "value": 48360000, "measure": "total"}
+        ],
+        "investment_categories": {
+          "Run the Business": 28500000,
+          "Grow the Business": 12800000,
+          "Transform the Business": 7060000
+        },
+        "budget_allocation_trend": {
+          "years": ["FY2022", "FY2023", "FY2024", "FY2025"],
+          "run": [72, 68, 62, 59],
+          "grow": [18, 21, 25, 26],
+          "transform": [10, 11, 13, 15]
+        },
+        "sankey_flow": {
+          "nodes": [
+            {"name": "Total IT Budget"},
+            {"name": "Infrastructure"},
+            {"name": "Applications"},
+            {"name": "People"},
+            {"name": "Data Centers"},
+            {"name": "Cloud"},
+            {"name": "Network"},
+            {"name": "Core Systems"},
+            {"name": "Digital Products"},
+            {"name": "Internal Staff"},
+            {"name": "Contractors"}
+          ],
+          "links": [
+            {"source": 0, "target": 1, "value": 18000000},
+            {"source": 0, "target": 2, "value": 15000000},
+            {"source": 0, "target": 3, "value": 15360000},
+            {"source": 1, "target": 4, "value": 6000000},
+            {"source": 1, "target": 5, "value": 8000000},
+            {"source": 1, "target": 6, "value": 4000000},
+            {"source": 2, "target": 7, "value": 9000000},
+            {"source": 2, "target": 8, "value": 6000000},
+            {"source": 3, "target": 9, "value": 12000000},
+            {"source": 3, "target": 10, "value": 3360000}
+          ]
+        }
+      }
+    }
+  ]
+}

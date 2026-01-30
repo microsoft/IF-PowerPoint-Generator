@@ -1,0 +1,26 @@
+@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<div class="card error-card">
+    <h2>Error</h2>
+
+    @if (Model?.ShowRequestId ?? false)
+    {
+        <p><strong>Request ID:</strong> <code>@Model.RequestId</code></p>
+    }
+
+    @if (!string.IsNullOrEmpty(Model?.Message))
+    {
+        <p class="error-message">@Model.Message</p>
+    }
+    else
+    {
+        <p>An unexpected error occurred. Please try again.</p>
+    }
+
+    <div class="error-actions">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Go Home</a>
+    </div>
+</div>

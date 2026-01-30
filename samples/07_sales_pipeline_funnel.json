@@ -1,0 +1,43 @@
+{
+  "requestId": "b08e2b7d-a6a0-4885-937c-238e8e760d40",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "Enterprise Sales Pipeline Analysis Q4 2024",
+    "context": "Create a quarterly pipeline review presentation for the sales leadership team. Show the full funnel with conversion rates, pipeline breakdown by segment and product, and monthly booking trends.",
+    "templatePreference": "executive"
+  },
+  "brandConfig": {
+    "primaryColor": "#1565c0",
+    "secondaryColor": "#e3f2fd",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "Enterprise Sales Pipeline Analysis Q4 2024",
+      "source_type": "goat",
+      "data": {
+        "funnel_stages": [
+          {"stage": "Leads Generated", "count": 2500, "value": 125000000},
+          {"stage": "Marketing Qualified", "count": 1875, "value": 93750000},
+          {"stage": "Sales Accepted", "count": 1125, "value": 56250000},
+          {"stage": "Opportunity Created", "count": 675, "value": 33750000},
+          {"stage": "Proposal Sent", "count": 338, "value": 16900000},
+          {"stage": "Negotiation", "count": 169, "value": 8450000},
+          {"stage": "Closed Won", "count": 85, "value": 4250000}
+        ],
+        "conversion_rates": {"Lead to MQL": 0.75, "MQL to SAL": 0.6, "SAL to Opportunity": 0.6, "Opportunity to Proposal": 0.5, "Proposal to Negotiation": 0.5, "Negotiation to Close": 0.5},
+        "pipeline_by_segment": {
+          "Enterprise": {"opportunities": 180, "value": 18500000, "avg_deal": 102778},
+          "Mid-Market": {"opportunities": 320, "value": 9600000, "avg_deal": 30000},
+          "SMB": {"opportunities": 175, "value": 5650000, "avg_deal": 32286}
+        },
+        "pipeline_by_product": {"Platform License": 15200000, "Professional Services": 8500000, "Support & Maintenance": 6200000, "Add-on Modules": 3850000},
+        "monthly_closed_won": [
+          {"month": "Oct", "deals": 25, "value": 1250000},
+          {"month": "Nov", "deals": 28, "value": 1400000},
+          {"month": "Dec", "deals": 32, "value": 1600000}
+        ]
+      }
+    }
+  ]
+}

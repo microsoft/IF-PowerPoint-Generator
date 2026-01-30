@@ -1,0 +1,43 @@
+{
+  "requestId": "c4b32772-6fe1-4000-bc9b-811b1ce98efd",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "Digital Transformation Roadmap 2025-2027",
+    "context": "Create a digital transformation roadmap presentation for the executive steering committee. Show the timeline of initiatives, investment allocation by work stream, and projected benefits over the 3-year horizon.",
+    "templatePreference": "it-strategy"
+  },
+  "brandConfig": {
+    "primaryColor": "#0078D4",
+    "secondaryColor": "#deecf9",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "Digital Transformation Roadmap 2025-2027",
+      "source_type": "goat",
+      "data": {
+        "initiatives": [
+          {"name": "Cloud Migration", "stream": "Infrastructure", "start": "2025-01-01", "end": "2025-12-31", "investment_mm": 8.5, "status": "in_progress", "completion": 35},
+          {"name": "API Platform", "stream": "Integration", "start": "2025-03-01", "end": "2025-09-30", "investment_mm": 3.2, "status": "planned", "completion": 0},
+          {"name": "Data Lake Implementation", "stream": "Data", "start": "2025-04-01", "end": "2026-03-31", "investment_mm": 5.8, "status": "planned", "completion": 0},
+          {"name": "AI/ML Platform", "stream": "Innovation", "start": "2025-07-01", "end": "2026-06-30", "investment_mm": 4.5, "status": "planned", "completion": 0},
+          {"name": "Customer Portal Modernization", "stream": "Applications", "start": "2025-01-01", "end": "2025-08-31", "investment_mm": 2.8, "status": "in_progress", "completion": 55},
+          {"name": "Zero Trust Implementation", "stream": "Security", "start": "2025-06-01", "end": "2026-12-31", "investment_mm": 6.2, "status": "planned", "completion": 0}
+        ],
+        "investment_by_stream": {
+          "Infrastructure": 8.5,
+          "Integration": 3.2,
+          "Data": 5.8,
+          "Innovation": 4.5,
+          "Applications": 2.8,
+          "Security": 6.2
+        },
+        "expected_benefits": {
+          "Cost Reduction": {"year_1": 2.5, "year_2": 5.8, "year_3": 9.2},
+          "Revenue Growth": {"year_1": 1.2, "year_2": 4.5, "year_3": 8.0},
+          "Efficiency Gains": {"year_1": 15, "year_2": 28, "year_3": 40}
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+AZURE_CONFIG.json
+
+node_modules/
+publish/
+deploy.zip
+[Bb]in/
+[Oo]bj/
+.DS_Store
+.vscode/
+.idea/
+.env

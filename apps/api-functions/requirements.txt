@@ -1,0 +1,22 @@
+# Azure Functions dependencies
+azure-functions>=1.17.0
+azure-servicebus>=7.11.0
+azure-cosmos>=4.5.0
+azure-storage-blob>=12.19.0
+azure-identity>=1.15.0
+
+# Data validation
+pydantic>=2.5.0
+
+# AI/LLM
+openai>=1.12.0
+
+# Utilities
+python-dotenv>=1.0.0
+aiohttp>=3.9.0
+
+# PowerPoint template introspection
+python-pptx>=0.6.23
+
+# SQL Server connectivity
+pyodbc>=5.0.0

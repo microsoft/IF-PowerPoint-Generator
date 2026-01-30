@@ -1,0 +1,22 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+
+    "SERVICEBUS_CONNECTION_STRING": "<your-service-bus-connection-string>",
+    "SERVICEBUS_QUEUE_NAME": "ppt-generation-jobs",
+
+    "COSMOS_ENDPOINT": "<your-cosmos-endpoint>",
+    "COSMOS_KEY": "<your-cosmos-key>",
+    "COSMOS_DATABASE": "ppt-generator",
+
+    "SQL_CONNECTION_STRING": "Driver={ODBC Driver 18 for SQL Server};Server=<server>.database.windows.net;Database=ppt-telemetry;Uid=<user>;Pwd=<password>;Encrypt=yes;TrustServerCertificate=no;",
+
+    "BLOB_CONNECTION_STRING": "<your-blob-connection-string>",
+    "TEMPLATES_CONTAINER": "ppt-templates",
+    "OUTPUT_CONTAINER": "ppt-outputs",
+
+    "APPLICATIONINSIGHTS_CONNECTION_STRING": "<your-app-insights-connection-string>"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "requestId": "d4e5f6a7-b8c9-4d3e-a2f1-0e9d8c7b6a5f",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "IT Capability Assessment and Recommendations",
+    "context": "Present assessment findings combining quantitative maturity data with strategic recommendations. Data should drive charts; narrative should drive action-oriented text slides.",
+    "templatePreference": "workbook"
+  },
+  "brandConfig": {
+    "primaryColor": "#2c5282",
+    "secondaryColor": "#bee3f8",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "IT Capability Assessment",
+      "source_type": "advisory_document",
+      "data": {
+        "maturity_scores": {
+          "Strategy & Planning": {"current": 2.4, "target": 4.0, "peer_average": 3.1},
+          "Service Delivery": {"current": 2.8, "target": 3.5, "peer_average": 3.0},
+          "Technology Management": {"current": 3.1, "target": 4.0, "peer_average": 3.2},
+          "Talent & Organization": {"current": 2.2, "target": 3.5, "peer_average": 2.8},
+          "Security & Risk": {"current": 2.9, "target": 4.0, "peer_average": 3.3}
+        },
+        "investment_breakdown": {
+          "Run the Business": 68,
+          "Grow the Business": 22,
+          "Transform the Business": 10
+        },
+        "text": "The assessment reveals [Client] is operating below peer benchmarks in 4 of 5 capability domains, with the largest gaps in Talent & Organization (1.3 points below target) and Strategy & Planning (1.6 points below target). Current investment allocation is heavily weighted toward operational maintenance at 68%, limiting transformation capacity. Recommend rebalancing to 55% Run / 25% Grow / 20% Transform over 24 months. Immediate priorities should focus on establishing a formal IT strategy function and launching a talent development program targeting cloud and data analytics skills. Expected improvement of 0.8-1.2 maturity points within 18 months with proper investment and executive commitment."
+      }
+    }
+  ]
+}

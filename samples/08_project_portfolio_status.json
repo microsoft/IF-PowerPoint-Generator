@@ -1,0 +1,39 @@
+{
+  "requestId": "cc361618-9a06-4326-9a24-db7ae6ce0ad5",
+  "callbackUrl": "https://example.com/webhook",
+  "presentationContext": {
+    "title": "IT Project Portfolio Status December 2024",
+    "context": "Prepare the monthly PMO status report for IT leadership. Show overall portfolio health, highlight projects that are at risk or critical, budget status, and key risks with mitigation plans.",
+    "templatePreference": "workbook"
+  },
+  "brandConfig": {
+    "primaryColor": "#424242",
+    "secondaryColor": "#fafafa",
+    "baseColor": "#FFFFFF"
+  },
+  "dataCollections": [
+    {
+      "title": "IT Project Portfolio Status December 2024",
+      "source_type": "internal_chat",
+      "data": {
+        "portfolio_summary": {"total_projects": 42, "total_budget": 28500000, "total_spent": 18200000, "on_track": 28, "at_risk": 9, "critical": 5},
+        "projects": [
+          {"name": "ERP Modernization", "budget": 4500000, "spent": 3200000, "completion": 72, "status": "on_track", "end_date": "2025-03-31"},
+          {"name": "Cloud Migration Phase 2", "budget": 3200000, "spent": 2800000, "completion": 85, "status": "at_risk", "end_date": "2025-01-31"},
+          {"name": "Customer Portal v3", "budget": 1800000, "spent": 1950000, "completion": 90, "status": "critical", "end_date": "2024-12-31"},
+          {"name": "Data Warehouse Upgrade", "budget": 2100000, "spent": 1400000, "completion": 65, "status": "on_track", "end_date": "2025-02-28"},
+          {"name": "Mobile App Redesign", "budget": 950000, "spent": 720000, "completion": 78, "status": "on_track", "end_date": "2025-01-15"},
+          {"name": "Security Operations Center", "budget": 1500000, "spent": 1650000, "completion": 95, "status": "critical", "end_date": "2024-12-15"},
+          {"name": "API Gateway Implementation", "budget": 800000, "spent": 450000, "completion": 55, "status": "at_risk", "end_date": "2025-02-15"}
+        ],
+        "budget_health": {"under_budget": 18, "on_budget": 14, "over_budget": 10},
+        "resource_allocation": {"Development": 145, "Infrastructure": 62, "QA": 38, "Project Management": 24, "Business Analysis": 18},
+        "risks": [
+          {"project": "Cloud Migration Phase 2", "risk": "Vendor delay on network configuration", "impact": "high", "mitigation": "Parallel workstream with alternative vendor"},
+          {"project": "Customer Portal v3", "risk": "Scope creep from business stakeholders", "impact": "critical", "mitigation": "Change control board escalation"},
+          {"project": "Security Operations Center", "risk": "Budget overrun due to hardware costs", "impact": "medium", "mitigation": "Negotiating volume discounts"}
+        ]
+      }
+    }
+  ]
+}
